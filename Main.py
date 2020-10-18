@@ -16,7 +16,7 @@ p4 = int(0.0753 * y)
 
 print(str(0.0827 * x) + "\n" + str(0.1818 * y) + "\n" + str(0.3081 * x) + "\n" + str(0.0753 * y))
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-time.sleep(2)
+time.sleep(4)
 
 
 while True:
@@ -25,10 +25,11 @@ while True:
     time.sleep(0.5)
     # im = pyautogui.screenshot(region=(480, 284, 465, 185)) #typingtest.com
     # im = pyautogui.screenshot(region=(286, 256, 1065, 106)) #10fastfingers.com
-    im = pyautogui.screenshot(region=(p1, p2, p3, p4))
+    im = pyautogui.screenshot(region=(p1, p2, p3, p4)) #10fastfingers.com
     # im = pyautogui.screenshot(region=(368, 254, 969, 604)) #typing.com 3-page Character Recognition
     # im = pyautogui.screenshot(region=(30, 462, 933, 90)) #10fast fingers multiplayer
     # im = pyautogui.screenshot(region=(294, 214, 933, 100)) #10 fast fingers competition
+
     text = pytesseract.image_to_string(im)
     time.sleep(0.01)
     print(text)
@@ -42,4 +43,4 @@ while True:
     for char in list_of_text:
         keyboard.press(char)
         keyboard.release(char)
-        time.sleep(0.001)
+        time.sleep(0.04) #Time between each key press, note setting to 0 works but it can be a bit buggy sometimes so i recommend having at least 0.001 seconds delay
