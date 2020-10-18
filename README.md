@@ -10,6 +10,10 @@ NOTE:
   - Pynput
   - Keyboard
   
+  You will also need to install TesseractOCR from:
+  
+  - https://github.com/UB-Mannheim/tesseract/wiki
+  
   The program works by taking a screenshot of the region that includes the text, analyses the image and picks out the text as a string. It then converts this string into a list
   of all the characters and then simply simulates a key press of every character.
   
