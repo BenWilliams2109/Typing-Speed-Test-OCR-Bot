@@ -5,10 +5,10 @@ A python bot that uses Optical Character Recognition to beat typing speed tests.
 NOTE:
   To run this program you will need to add the following packages to your python interpreter:
   
-  - PyTesseract
-  - PyAutoGui
-  - Pynput
-  - Keyboard
+  - pytesseract
+  - pyautogui
+  - pynput
+  - keyboard
   
   You will also need to install TesseractOCR from:
   
