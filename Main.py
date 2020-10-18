@@ -15,7 +15,7 @@ p3 = int(0.3081 * x)
 p4 = int(0.0753 * y)
 
 print(str(0.0827 * x) + "\n" + str(0.1818 * y) + "\n" + str(0.3081 * x) + "\n" + str(0.0753 * y))
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = "Insert file location of tesseract.exe here e.g. (r'C:\Program Files\Tesseract-OCR\tesseract.exe')
 time.sleep(4)
 
 
